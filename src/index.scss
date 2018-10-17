@@ -3,3 +3,29 @@ $main-color: skyblue;
 body {
   background-color: $main-color;
 }
+
+.row {
+  display: flex;
+}
+
+.col {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  margin: 1px;
+}
+
+.col.checked {
+  background-color: #000;
+}
+
+// .replay {
+//   display: none;
+// }
+// .replay.show {
+//   display: inline-block;
+// }
+
+.replay:not(.show) {
+  display: none;
+}
